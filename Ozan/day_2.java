@@ -12,8 +12,6 @@ class Solution {
         int rowIndex = (last + first)/2;
 
         while (first<=last) {
-            if (rowIndex<0 || rowIndex>numberOfRows-1)
-                break;
             if (matrix[rowIndex][0]<=target && target<=matrix[rowIndex][numberOfColumns-1])
                 break;
 
