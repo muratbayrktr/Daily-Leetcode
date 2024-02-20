@@ -28,8 +28,8 @@ class Solution {
         first = 0;
         last = matrix[0].length-1;
         int indexOfMiddle = (last + first)/2;
-
         boolean res = false;
+        
         while (first<=last) {
             if (matrix[rowIndex][indexOfMiddle]==target) {
                 res = true;
