@@ -1,5 +1,5 @@
 matrix = [[1]] #[[1,3,5,7],[10,11,16,20],[23,30,34,60]]
-target = 0
+target = 1
 
 
 class Solution:
@@ -20,7 +20,7 @@ class Solution:
                 if matrix[row_mid][-1] < target:
                     # Lower half recursive call
                     return self.searchMatrix(matrix[row_mid:], target)
-                else:
+                elif matrix[row_mid][-1] >= target:
                     # Current row binary search 
                     return self.row_binary_search(matrix[row_mid], target)
 
