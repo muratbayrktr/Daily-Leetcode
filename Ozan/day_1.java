@@ -1,6 +1,9 @@
 // Solution for 20. Valid Parentheses
 // link: https://leetcode.com/problems/valid-parentheses/description/
 
+import java.util.List;
+import java.util.Stack;
+
 
 class Solution {
     public boolean isValid(String s) {
