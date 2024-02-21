@@ -18,12 +18,3 @@ func subsets(nums []int) [][]int {
     
     return result
 }
-
-func main() {
-    nums := []int{1, 2, 3}
-    subsetsResult := subsets(nums)
-
-    for _, subset := range subsetsResult {
-        fmt.Println(subset)
-    }
-}
