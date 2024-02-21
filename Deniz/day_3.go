@@ -15,6 +15,5 @@ func subsets(nums []int) [][]int {
             result = append(result, newSubset)
         }
     }
-    
     return result
 }
