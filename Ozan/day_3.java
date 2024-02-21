@@ -18,9 +18,8 @@ class Solution {
         
         List<Integer> withAddition = new ArrayList<>(accumulate);
         withAddition.add(nums[index]);
-        List<Integer> withoutAddition = new ArrayList<>(accumulate);
         
         helper(result,nums,index+1,withAddition);
-        helper(result,nums,index+1,withoutAddition);
+        helper(result,nums,index+1,accumulate);
     }
 }
