@@ -6,11 +6,20 @@ public:
             n = abs(n);
             x = 1/x;
         }
+        int revert = 0;
+        while (abs(x) < 0) {
+            x *= 10;
+            revert++;
+        }
         if(n%2==0){
             return myPow(x*x, n/2);
         }
         else{
             return x*myPow(x, n-1);
+        }
+        while (revert) {
+            x /= 10;
+            revert--;
         }
     }
 };
